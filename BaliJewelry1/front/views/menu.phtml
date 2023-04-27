@@ -1,0 +1,43 @@
+<!--menu navbar items-->
+<section class="navbar">
+    <div class="container">
+        <div class="logo">
+            <img src="../public/upload/logobali.png" alt="shop logo" class="img-responsive">
+        </div>
+        <button id="menu-button" class="menu-button">Menu</button>
+        <nav id="menu" class="menu">
+            <ul>
+                <li>
+                    <a href="index.php?road=home">Home</a>
+                </li>
+                <li>
+                    <a href="index.php?road=categories">Categories</a>
+                </li>
+                <li>
+                    <a href="index.php?road=collections">Collections</a>
+                </li>
+                <li>
+                    <a href="index.php?road=goContact">Contact</a>
+                </li>
+                <li>
+                    <a href="index.php?road=cart">Cart</a>
+                </li>
+                <!--if not logged-in show button for sign up/in -->
+                <?php
+                    if(!isset($_SESSION['auth'])) {
+                ?>
+                    <li class="nav-item">
+                      <a href="index.php?road=auth"> Sign Up/In</a>
+                    </li> 
+                <!--if logged-in: show name of user-->
+                <?php }else {?>
+                    <li class="nav-item">
+                      <a href="index.php?road=logout"> <?= $_SESSION['user'] ?>  Logout </a>
+                    </li>    
+                <?php } ?>
+            </ul>
+        </nav>
+        <div class="clearfix"></div>
+    </div>
+</section>
+<script src="../public/js/menu.js"></script>  

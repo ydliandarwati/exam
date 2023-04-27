@@ -1,0 +1,499 @@
+/*
+CSS for All
+*/
+
+
+html,
+body,
+div,
+h1, 
+main-content,
+nav,
+menu {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font-family: 'Dancing Script', cursive;
+	vertical-align: baseline;
+}
+
+body {
+	line-height: 1;
+}
+
+.navbar {
+	padding: 3rem 5rem 0 5rem;
+	background: linear-gradient(to bottom, rgba(208,197,186,1) 0%,rgba(235,227,219,0.25) 25%,rgba(255,255,255,0) 100%);
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 1%;
+}
+
+.img-responsive {
+    width: 100%;
+}
+
+.img-curve {
+    border-radius: 15px;
+}
+.text-right{
+    text-align: right;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-white {
+    color: white;
+}
+
+.clearfix {
+    clear: both;
+    float: none;
+}
+
+
+.btn{
+    padding: 1%;
+    border: none;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+
+.btn-primary {
+    background-color:#e58e26;
+    color: #f5f6fa;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    background-color:#eccc68;
+    color: #f5f6fa;
+}
+
+.btn-secondary {
+    background-color:#ff7f50;
+    color: #f5f6fa;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.btn-secondary:hover {
+    background-color:#eccc68;
+    color: #f5f6fae;
+}
+
+
+.float-container {
+    position: relative;
+    display: flex;
+}
+
+.float-text {
+    /*position: absolute;*/
+    /*top: 1rem;*/
+    left: 40%;
+    vertical-align: top;
+    display: inline-block;
+    text-align: center;
+    width: 120px;
+}
+
+.field {
+    display: flex;
+    margin-bottom: 1em;
+}
+
+.field label {
+    width: 300px;
+    font-size: 1.5rem;
+}
+
+/* CSS Navbar*/ /*fixed*/
+.logo {
+    width: 10%;
+    float: left;
+}
+
+/*menu */
+.menu {
+    text-align: right;
+    line-height: 60px;
+}
+
+.menu ul {
+    list-style-type: none;
+}
+
+.menu ul li {
+    display: inline-block;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+nav a {
+	display: block;
+	color: black;
+	font-weight: bold;
+	text-decoration: none;
+	padding: 1rem 1.5rem;
+	background-color: #ebe3db;
+	transition: all .7s linear;
+}
+
+a:hover, 
+a:focus, 
+a:active {
+	background-color: #ffa502;
+	color: #ffffff;
+}
+
+/* CSS for categories cart*/
+.shopping {
+    margin-bottom: 1rem;
+    color: #f19066;
+}
+.flex-table {
+  background-color: #f1f1f1;
+  margin: 10px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex-table img {
+  width: 100px;
+}
+
+.no-records {
+    font-size: 1.2rem;
+}
+/* CSS for categories fixed*/
+.categories {
+    padding: 4% 0;
+    font-size: 30px;
+    color: #ffa502;
+}
+
+.box-3 {
+    width: 28%;
+    float: left;
+    margin: 2%;
+    color: #eccc68;
+    
+}
+
+.float-text {
+    color: #f19066;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: left;
+    
+}
+
+/* CSS for Search fixed*/
+
+.search {
+    font-size: 25px;
+    font-weight: bold;
+    text-align: right;
+    color: #EA2027;
+    margin: 0 auto;
+}
+
+.text-search {
+    text-align: right;
+    font-size: 1.3rem;
+    color: #EA2027;
+    margin: 0 auto;
+}
+
+/* CSS for Collection fixed*/
+
+.jewelry-collection {
+    padding: 4% 0;
+    font-size: 2rem;
+    color: #ffa502;
+}
+
+
+.jewelry-collection-box {
+    width: 43%;
+    margin: 1%;
+    padding: 2%;
+    float: left;
+    background-color: #ffffff;
+    border-radius: 15px;
+}
+
+.jewelry-collection-img {
+    width: 20%;
+    float: left;
+}
+
+.jewelry-collection-desc { 
+    width: 70%;
+    float: left;
+    margin-left: 8%;
+}
+
+.jewelry-price {
+    font-size: 1.2rem;
+    margin: 2% 0;
+    color: #EA2027
+}
+
+.jewelry-detail {
+    font-size: 1.5rem;
+    color: #2f3542;
+   
+}
+
+/*CSS auth phtml fixed*/
+
+.auth {
+   text-align: center;
+}
+
+.auth input {
+    color: #ffa502;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: 'Dancing Script';
+    
+}
+
+/*CSS register fixed*/
+.text-register {
+    text-align: center;
+}
+
+/* CSS for social media fixed*/
+
+.social ul {
+    list-style-type: none;
+}
+
+.social ul li {
+    display: inline;
+    padding: 1%;
+}
+
+.fa {
+    padding: 15px;
+    font-size: 1.3rem;
+    width: 20px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+}
+
+/* Add a hover effect*/
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+    background: #3B5998;
+    color:#f5f6fa;
+    margin-left: 1%;
+}
+
+/* Twitter */
+.fa-twitter {
+    background: #55ACEE;
+    color: #f5f6fa;
+} 
+
+/* Instagram */
+.fa-instagram {
+    background: #cc8e35;
+    color: #f5f6fa;
+} 
+
+/* CSS for Slideshow container */
+.slideshow-container {
+    text-align: center;
+    position: relative;
+    margin: 0 auto;
+}
+
+.slideshow-container img {
+    max-width: 50%;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+    
+/* CSS for contact fixed*/
+
+.contact aside {
+    width: 100%;
+    float: none;
+    text-align: center;
+    font-size: 1.5rem;
+}
+.map iframe {
+    height : 25rem;
+    width  : 25rem;
+    border : 0;
+    text-align: center;
+}
+
+.footer {
+	padding: 3rem 5rem 0 5rem;
+	background: linear-gradient(to bottom, rgba(208,197,186,1) 0%,rgba(235,227,219,0.25) 25%,rgba(255,255,255,0) 100%);
+}
+
+/* CSS for Mobile Size or Smaller S creen*/
+
+.menu-button {
+    display: none;
+}
+
+
+@media only screen and (max-width:768px){
+    .logo{
+        width: 80%;
+        float: none;
+        margin: 1% auto;
+    }
+    .menu-button {
+        display: inline-block;
+        position: absolute;
+        top: 8px;
+        right: 8px;
+    }
+    .menu {
+        display: none;
+        position: absolute;
+        left: 8px;
+        top: 32px;
+        right: 8px;
+        z-index: 100;
+        line-height: 24px;
+    }
+    .menu.open {
+        display: block;
+    }
+    .menu ul {
+        display: block;
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+        text-align: left;
+    }
+    .menu ul li {
+        display: block;
+    }
+    .menu a {
+        padding: 4px;
+        display: block;
+    }
+    
+    .categories {
+        width: 80%;
+        float: none;
+        margin: 1% auto;
+        padding: 20% 0;
+    }
+    
+    .box-3 {
+        width:95%;
+        margin: 4% auto;
+    }
+
+    .float-text {
+        width: 80%;
+        padding: 20% 0;    
+    }
+    
+    h2 {
+         margin-bottom: 10%;
+    }
+
+
+    .jewelry-collection {
+        padding:10% 0;
+    }
+    
+    .categories-container {
+        padding: 10% 0;
+        width: 80%;
+        
+    }
+    
+    .btn{
+        width: 91%;
+        padding: 2%;
+        
+    }
+    
+    .categories {
+        padding: 20% 0;
+    }
+
+    
+    h2 {
+        margin-bottom: 5%;
+    }
+ 
+    .jewelry-collection {
+        padding: 20% 0;
+    }
+    
+    .jewelry-collection-box {
+        width: 90%;
+        padding: 5%;
+        margin-bottom: 5%;
+    }
+    
+    .social {
+        padding: 5% 0;
+    }
+    
+    .slideshow-container {
+        width: 80%;
+    }
+    
+    .slideshow-container img {
+        max-width: 50%;
+    }
+    
+    .field {
+        width: 80%;
+    }
+
+    .contact aside {
+        width: 80%;
+    }
+    .map iframe {
+        width: 80%;
+    }
+    
+    .auth {
+        width: 80%;
+    }
+    
+    .auth {
+        width: 50%;
+    }
+    
+    .flex-table {
+        width: 80%;
+    }
+    
+    .flex-table img {
+        width: 70%;
+    }
+}
+
+

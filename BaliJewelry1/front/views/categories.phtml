@@ -1,0 +1,26 @@
+<section class="categories">
+        <div class="categories-container">
+            <h2>Categories</h2>
+                <!--a loop over all categories to be printed in the table-->
+                <?php foreach($cat as $value) :?>
+                    <a href="index.php?road=showCategoryItems&title=<?=$value['title']?>">
+                        <div class="box-3">
+                            <?php
+                                if($value['image_name'] != "") : 
+                            ?>
+                                <img src="../public/img/category/<?=$value['image_name']?>" alt=<?=$value['title']?> class="img-responsive img-curve" >
+                            <?php 
+                                else : 
+                                    echo "No Image added";
+                                endif
+                            ?> 
+                            <h3 class="float-text"><?=$value['title']?></h3>
+                        </div>
+                    </a>
+                <?php endforeach ?>
+        </div>
+</section>
+
+<div class="clearfix"></div>
+
+

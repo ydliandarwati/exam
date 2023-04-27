@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<!--main view with a template to be loaded + menu + footer-->
+<html lang="en">
+	<head>
+	    <meta charset="UTF-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <meta name="description" content="Jewelry Shop from Bali">
+	    <title>Bali Earth Soul Jewelry</title>
+	
+	    <!-- Link CSS file -->
+	    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet"> 
+	    <link rel="stylesheet" href="../public/css/style.css" >
+		
+	</head>
+	
+	<body>
+		<header>
+			<?php include('views/menu.phtml');?>
+		</header>
+		<main class="container">
+			<?php include $template ?>
+		</main>
+		<footer>
+			<?php include('views/footer.phtml');?>
+		</footer>
+		<script src="../public/js/search.js"></script>  
+	</body>
+</html>
